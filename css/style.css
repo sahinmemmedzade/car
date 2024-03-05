@@ -1,0 +1,705 @@
+.header{
+    width: 100%;
+    z-index: 1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.logoword{
+    display: flex;
+    font-size: 30px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+width: 80%;
+align-items: start;
+}
+.bigmenu{
+    color: white;
+    background-color: transparent;
+width: 100%;
+padding-top: 35px;
+gap:40px;
+height: 100%;
+font-size: 25px;
+background-color: black;
+box-sizing: border-box;
+}
+.bigmenu>ul>li{
+    height: 100px;
+}
+.littlemenu{
+    color: white;
+    background-color: rebeccapurple;
+width: 100%;
+padding-top: 45px;
+box-sizing: border-box;  
+position: absolute;  
+display: none;
+}
+.bigmenu > ul > li > a:hover,
+.bigmenu > ul > li > a:active {
+    color: blueviolet;
+}
+.bigmenu > ul > li:first-child > a {
+    color: blueviolet; 
+}
+.littlemenu>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.bigmenu .littlehomes {
+    list-style-type: none;
+    background-color: white;
+    display: none;
+    width: 150px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.bigmenu li:hover .littlehomes {
+    display: block;
+}
+
+.littlehomes>li>a {
+    color: black;
+    margin-left: 15%;
+}
+
+.bigmenu li:hover .littlehomes>li:hover>a {
+    color: blueviolet;
+}
+.hot{
+    width: 60px;
+    height: 30px;
+    background-color:pink;
+    position: absolute;
+    top: 10%;
+right: 47%;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.search.active {
+    height: 100vh;
+}
+
+.search input[type="text"] {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 70px; 
+    position: relative;
+    display: block;
+    margin: 22.5% auto;
+
+}
+
+.search .fa-solid.fa-magnifying-glass {
+    position: absolute;
+    left: 35%;
+    top: 52%;
+    font-size: 26px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.search .close-icon {
+    position: absolute;
+    top: 40%;
+    left: 63%; 
+    cursor: pointer;
+    font-size: 30px;
+}
+.shoping{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    left: 20px;
+    background-color: blueviolet;
+    font-size: 10px;
+    color: aliceblue;
+}
+.wish{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    left: 20px;
+    background-color: blueviolet;
+    font-size: 10px;
+    color: aliceblue;  
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    margin-right: 10px;
+}
+
+
+.littlemenu>ul>li>a{
+    color: white;
+}
+
+.bigmenu >ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon:hover +.blogs{
+visibility: visible;}
+.bookatable{
+    color: white;
+    width: 40%;
+    background-color: transparent;
+    height: 100%;
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookatable>h4{
+    border-bottom:2px solid black
+
+}
+.menuicon {
+    position: absolute;
+    left: 120%;
+    color: blue;
+    display: none;
+}
+.menuicon>i{
+    font-size: 30px;
+    color:black;
+}
+.icons{
+    font-size: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 10%;
+    margin-left: 5%;
+}
+.fa-magnifying-glass:hover{
+    color: blueviolet; cursor: pointer;
+}
+.fa-cart-shopping:hover{
+    color: blueviolet; cursor: pointer;
+
+}
+.fa-heart:hover{
+    color: blueviolet; cursor: pointer;
+
+}
+@media screen and (max-width:1200px) {
+   .menu{
+    padding-right:34% ;
+    box-sizing: border-box;
+}
+.bigmenu>ul>li>a{
+    font-size: 20px;
+}
+.littlehomes>li>a{
+    font-size: 20px;
+
+}
+.logo{
+    margin-right: 5%;
+}
+.hot{
+    width: 40px;
+    height: 20px;
+    font-size: 15px;
+right: 68%;
+top:20%
+;}
+.search input[type="text"] {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    padding-left: 60px; 
+    position: relative;
+    display: block;
+    margin:     22.5% auto;
+
+}
+}
+@media screen and (max-width:1100px) {
+    .search input[type="text"] {
+        width: 300px;
+        height: 40px;
+        padding: 10px;
+        padding-left: 60px; 
+        position: relative;
+        display: block;
+    margin-top: 26%;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .menu{
+     padding-right:24% ;
+     box-sizing: border-box;
+ }
+ .bigmenu>ul>li>a{
+     font-size: 16px;
+ }
+ .littlehomes>li>a{
+     font-size: 16px;
+ 
+ }
+ .logo{
+     margin-right: 5%;
+ }
+ .hot{
+     width: 30px;
+     height: 15px;
+     font-size: 12px;
+ right: 62%;
+ top:20%
+ ;}
+ .search input[type="text"] {
+     width: 300px;
+     height: 40px;
+     padding: 10px;
+     padding-left: 70px; 
+     position: relative;
+     display: block;
+     margin:     29% auto;
+ 
+ }
+ }
+@media screen and (max-width:989px) {
+    .search >.search-icon{
+        bottom: 25%;
+    }
+    .search >.close-icon{
+top:30%;
+left: 65%;
+    }
+    .logo{
+        margin-left: 15%
+    }
+    .bigmenu {
+        display: none;
+    }
+
+    .menuicon {
+        display: block;
+    }
+
+    .littlemenu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: none;
+        transform: translateY(44%);
+        
+    }
+.littlemenu>ul>li{
+    color: white;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.littlemenu>ul{
+    display: block;
+}
+  
+   .icons{
+    width: 80%;
+margin-right: 15%;
+    display: flex;
+justify-content: end;
+}
+.littlemenu li:hover .littlehomes>li:hover>a {
+    color: blueviolet;
+}
+.littlemenu .littlehomes {
+    list-style-type: none;
+    background-color: white;
+    display: none;
+    width: 150px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.littlemenu li:hover .littlehomes {
+    display: block;
+}
+.hot{
+    left: 10% ;
+    top:52%
+}
+.iconmenu {
+    transition: transform 0.3s ease; 
+}
+
+}
+@media screen and (max-width:735px) {
+    .menu{
+     padding-right:14% ;
+     box-sizing: border-box;
+ }}
+ @media screen and (max-width:652px) {
+    .wish{
+        width: 15px;
+        height: 15px;
+
+    }
+    .shoping{
+        width: 15px;
+        height: 15px;
+    }
+.hot{
+    left:15%
+}    
+}
+@media screen and (max-width:565px) {
+   .menuicon{
+    left: 110%;
+   }
+    .menu{
+     padding-right:8% ;
+     box-sizing: border-box;
+ }}
+ @media screen and (max-width:480px) {
+    .menu{
+     padding-right:2% ;
+     box-sizing: border-box;
+ }}
+ @media screen and (max-width:435px) {
+    .menu{
+     padding-left:10% ;
+ }
+.hot{
+    left: 20%;
+}
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    height: 400px;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+.footer p{
+    color: gray;
+}
+.footer i{
+    color: gray;
+}
+.footpart1{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.footparts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footicons{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+.footicons i:hover{
+    color: #717FE0;
+    cursor: pointer;
+}
+.footparts input{
+    border: none;
+    color: gray;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.footparts button{
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    background-color: #717FE0;
+}
+.footparts button:hover{
+    background-color: white;
+    color: #717FE0;
+}
+.footparts input:focus{
+    transition: 1s;
+    border-bottom: 2px solid #717FE0;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    border: 1px solid gray;
+    cursor: pointer;
+    width: 350px;
+    background-size: cover;
+    height: 270px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.card div{
+    width: 100%;
+    height: 100%;
+}
+.card div{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.carts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.carts h1{
+    margin-left: 168px;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.carts ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    list-style-type: none;
+}
+.carts ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.carts ul li a{
+    display: flex;
+    flex-direction: column;
+}
+.active{
+    width: 30px;
+    height: 2px;
+    align-self: center;
+    background-color: gray;
+    opacity: 0;
+    transition: 0.7s;
+}
+.carts ul li:hover .active{
+    opacity: 1;
+}
+.carts ul li:hover .carts ul li a{
+    color: black;
+}
+.choices div{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+.choices div a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 20px;
+    border: 1px solid gray;
+}
+.choices div a:hover{
+    background-color: #717FE0;
+    color: white;
+}
+.card1 img{
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card1 img:hover{
+    transform: scale(1.1);
+}
+.card1{
+    width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.info{
+    display: flex;
+    align-items: flex-start;
+}.go-to-product{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    margin-left: 67px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    z-index: -1;
+    transition: 1;
+}
+.go-to-product:hover{
+    background-color: black;
+    color: white;
+}
+.product-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.product-image:hover .go-to-product{
+    animation: totop 10s ease;
+}
+@keyframes totop{
+    0%{
+        bottom: 0px;
+    }
+    100%{
+        bottom: 30px;
+        z-index: 10;
+    }
+}
+.info i{
+    cursor: pointer;
+    align-self: flex-end;
+}
+@media only screen and (max-width: 450px){
+   
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 95%;
+        max-height: 200px;
+        background-size: cover;
+    }
+  
+}
+@media only screen and (max-width: 600px){
+   
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 95%;
+        max-height: 300px;
+        background-size: cover;
+    }
+    .card:last-child{
+        background-size: cover;
+    }
+    
+}
+@media only screen and (max-width: 777px){
+   
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 95%;
+        height: 400px;
+        background-size: contain;
+    }
+    .card:last-child{
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 991px){
+   
+    .cards{
+        margin-top: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+    .card{
+        width: 45%;
+    }
+   
+}
+@media only screen and (max-width: 1200px) {
+    .cards{
+        width: 90%;
+        gap: 50px;
+    }
+    .card{
+        min-width: 30%;
+    }
+}
+.card:hover{
+    background-color: #717FE0;
+    opacity: 0.7;
+}

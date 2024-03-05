@@ -1,0 +1,170 @@
+
+
+@media only screen and (min-width: 900px) {
+    .slide {
+        height: 700px !important;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:989px) {
+    .slide{
+margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 900px) {
+   
+    .slide {
+        height: 400px !important;
+    }
+    
+    .slide h2,
+    .slide span {
+        font-size: 20px;
+    }
+
+    .slide button {
+        font-size: 5px;
+    }
+    
+    .firstslideword {
+        margin-left: 8%;
+        margin-top: 17%;
+        font-size: 35px;
+        color: rgb(75, 75, 74);
+    }
+    
+    .firstslideword button {
+        border-radius: 30px;
+        font-size: 20px;
+        width: 16%;
+        height: 40px;
+        border-color: transparent;
+        background-color: rgb(113, 127, 224);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (max-width: 775px) {
+    
+    .firstslideword button {
+        border-radius: 30px;
+        font-size: 10px !important;
+        width: 16%;
+        height: 40px;
+        margin-left: 10%;
+    }
+    .slide h2,
+    .slide span {
+        font-size: 15px;
+        margin-left: 10%;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .slide {
+        max-height: 200px !important;
+    }
+    .firstslideword button {
+        border-radius: 30px;
+        font-size: 7px!important;
+        width: 17% !important;
+        height: 30px !important;
+        margin-left: 9%;
+    }
+    .slide h2,
+    .slide span {
+        font-size: 15px;
+        margin-left: 10%;
+    }
+  
+}
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    max-height: 100%;
+}
+
+.slide1, .slide2, .slide3 {
+    flex: 0 0 100%;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url('https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg');
+}
+
+.slide2 {
+    background-image: url('https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg');
+}
+
+.slide3 {
+    background-image: url('https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg');
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 50px;
+    color: gray;
+    background-color: unset;
+    border: none;
+}
+.next :hover{
+    color: blueviolet;
+}
+.prev :hover{
+    color: blueviolet;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.fa-solid button {
+    font-size: 30px;
+}
+
+.firstslideword {
+    margin-left: 8%;
+    margin-top: 17%;
+    font-size: 35px;
+    color: rgb(75, 75, 74);
+}
+
+.firstslideword button {
+    border-radius: 30px;
+    font-size: 20px;
+    width: 16%;
+    height: 40px;
+    border-color: transparent;
+    background-color: rgb(113, 127, 224);
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
